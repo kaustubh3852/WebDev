@@ -1,0 +1,8 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDMwj6AaY6NDqWM8tYRWZ6qMaiQmfvOjT7Ew&s");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; /* scroll will scroll the image also with the entire page */
+
+
+}
