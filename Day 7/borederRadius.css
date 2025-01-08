@@ -1,0 +1,22 @@
+p.round1 {
+    border: 2px solid red;
+    padding: 5px;
+}
+
+p.round2 {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p.round3 {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p.round4 {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 12px;
+}

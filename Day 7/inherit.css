@@ -1,0 +1,8 @@
+div {
+    border: 2px solid red;
+    margin-left: 100px;
+}
+
+p.inherit {
+    margin-left: inherit;
+}
