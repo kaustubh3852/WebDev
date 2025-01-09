@@ -1,0 +1,15 @@
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+p.ex1 {
+    background-color: yellow;
+    margin: 30px;
+    border: 1px solid red;
+    outline: 1px solid black;
+    outline-offset: 15px;
+}

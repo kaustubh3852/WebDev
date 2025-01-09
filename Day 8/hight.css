@@ -1,0 +1,12 @@
+div.ex1 {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+div.ex2 {
+    max-width: 500px;
+    height: 100px;
+    background-color: lightblue
+
+}

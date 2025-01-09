@@ -1,0 +1,23 @@
+h1 {
+    text-decoration: overline blue double 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-decoration: line-through green wavy auto;
+    text-transform: lowercase;
+}
+
+h3 {
+    text-decoration: underline lightsalmon dotted 25%;
+    text-transform: capitalize;
+}
+
+p.ex1 {
+    text-decoration: overline underline darkgoldenrod;
+
+}
+
+a{
+    text-decoration: none;
+}
