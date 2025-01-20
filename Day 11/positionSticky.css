@@ -1,0 +1,7 @@
+div.sticky {
+    position: sticky;
+    top: 0%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 3px solid #4CAF50;
+}
