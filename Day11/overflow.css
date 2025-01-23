@@ -1,0 +1,8 @@
+div {
+    background-color: coral;
+    height: 65px;
+    width: 200px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    border: 1px solid black;
+}
