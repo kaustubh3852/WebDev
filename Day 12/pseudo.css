@@ -1,0 +1,28 @@
+a.highlight:hover {
+    color:red;
+    font-size:20px;
+}
+
+div.mouse{
+    background-color: green;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border:1px solid black;
+}
+
+div.mouse:hover {
+    color:black;
+    background-color: aquamarine;
+}
+
+.ex3 {
+    display:none;
+    background-color:yellow;
+    padding:20px;
+}
+
+div.ex2:hover p.ex3 {
+    display:block;
+}
+
