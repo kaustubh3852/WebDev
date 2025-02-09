@@ -1,0 +1,60 @@
+.hsr-hero video{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hsr-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    width: 83.33%;
+    text-align: center;
+}
+
+.hsr-text h1{
+        font-family: 'Lane', sans-serif;
+        font-weight: normal;
+}
+.land{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 1;
+        font-size: .7rem;
+}
+.hsr-hero img{
+    position:absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+}
+.button-group{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+}
+.button-group a{
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+#learn-more{
+    background-color:black
+}
+#download{
+    background-color:#a7cb00;
+}
