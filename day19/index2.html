@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h3>JavaScript</h3>
+    <p>Declaring a constant arraydoes NOT make the elments unchangeable:</p>
+    <p id="demo"></p>
+
+    <script>
+        const cars = ['Toyota', 'BMW', 'Volvo'];
+        cars[0] = 'Saab';
+        cars.push('Audi');
+        document.getElementById('demo').innerHTML = cars;
+    </script>
+</body>
+</html>
