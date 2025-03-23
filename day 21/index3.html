@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using an Object Literal</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Create an empty objects
+        const person = {};
+
+        //Add properties
+        person.Name = "John";
+        person.age = 50;
+        person.eyeColor = "blue";
+
+        // Display Data from Object
+        document.getElementById('demo').innerHTML = person.Name + " is " + person.age + " years old";
+    </script>
+</body>
+</html>
