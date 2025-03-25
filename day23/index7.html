@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>JavaScript objects </h1>
+    <h2>Display Properties with JSON</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        let myString = JSON.stringify(person);
+
+        // Diaplay JSON
+        document.getElementById('demo').innerHTML = myString;
+
+    </script>
+</body>
+</html>

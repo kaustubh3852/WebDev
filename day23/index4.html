@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Objects</h1>
+    <h2>Display Objects</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            name: "John",
+            age: 50,
+            city: "New York"
+        };
+
+        let text = "";
+        for(let x in person){
+            text += person[x] + " ";
+        };
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>

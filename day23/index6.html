@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The object.entries() Method</h2>
+    <p>object.entries() makes it simple to use objets in loops:</p>
+    <p id="demo"></p>
+
+    <script>
+        const fruits = {Bananas: 300, Oranges: 200, Apples: 500};
+        
+        let text = "";
+        for (let[fruit, amount] of Object.entries(fruits)){
+            text += fruit +": " + amount + "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
