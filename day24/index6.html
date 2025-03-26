@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript object Constructor</h1>
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "rally", 48, "green");
+
+        // Add a name method
+        myMother.changeName = function(name) {
+            this.lastName = name;
+        }
+
+        myMother.changeName("Doe");
+
+        document.getElementById('demo').innerHTML = "My mother's last name is " + myMother.lastName;
+    </script>
+</body>
+</html>
