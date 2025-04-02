@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h3>javaScript</h3>
+    <p>Declearing a constant object doe NOT make the objects properties unchangeable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = {type:'Fiat', model:'2000', color:'white'};
+        cars.color = 'red';
+        cars.owner = 'Johnson';
+        document.getElementById('demo').innerHTML = 'Car owner is ' + cars.owner;
+    </script>
+</body>
+</html>
