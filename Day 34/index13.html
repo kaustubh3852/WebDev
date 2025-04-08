@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The startWith() Method</h2>
+    <p id="demo"></p>
+    <p>The startWith() method is not supported in the Internet Explorer</p>
+
+    <script>
+        let text = "Hello World, welcome to the universe.";
+        document.getElementById('demo').innerHTML = text.startsWith("World", 5);
+    </script>
+</body>
+</html>
