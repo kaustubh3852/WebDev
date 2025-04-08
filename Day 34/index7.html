@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The match() method</h2>
+    <p>Perform a global search for "ain".</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "The rain in SPAIN stays mainly in the plain";
+        const myArray = text.match(/ain/g);
+        document.getElementById('demo').innerHTML = myArray.length + " " + myArray;
+    </script>
+</body>
+</html>
