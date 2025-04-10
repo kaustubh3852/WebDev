@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>javascript BigInt</h1>
+    <h2>BigInt Divide</h2>
+    <p>A BigInt can not have decimals.</p>
+    <p>Cannot mix BIgInt and other types. Use explicit conversion.</p>
+    <p id="demo"></p>
+
+    <script>
+        let x = 5n;
+        let y = Number(x) / 2;
+        document.getElementById('demo').innerHTML = y;
+        
+    </script>
+</body>
+</html>
