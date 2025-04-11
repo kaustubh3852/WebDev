@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1> javaScript Arrays</h1>
+    <h2>The unshift() Method</h2>
+    <p>The unshift() method adds a new elements to the beginninig of an array:</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById('demo').innerHTML = fruits;
+        fruits.unshift("Lemon");
+        document.getElementById('demo2').innerHTML = fruits;
+    </script>
+</body>
+</html>
