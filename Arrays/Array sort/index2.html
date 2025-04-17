@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>Javacript Arrays</h1>
+    <h2>The sort() Method</h2>
+    <p>Sort the array in descending order:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const points = [40,100,1,5,25,10];
+        document.getElementById('demo').innerHTML = points;
+
+        points.sort(function(a, b){return b-a});
+        document.getElementById('demo2').innerHTML = points;
+    </script>
+</body>
+</html>
