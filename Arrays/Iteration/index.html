@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javacript</title>
+</head>
+<body>
+    <h1>javaScript Arrays</h1>
+    <h2>The forEach() Method</h2>
+    <p>Call a function once for each array element:</p>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+
+        let text = "";
+        numbers.forEach(myFunction);
+        document.getElementById('demo').innerHTML = text;
+
+        function myFunction(value, index, array){
+            text += value + "<br>";
+        }
+    </script>
+    
+</body>
+</html>
