@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javacript</title>
+</head>
+<body>
+    <h2>Javacript switch</h2>
+    <p>It is Weekend</p>
+    <p id="demo"></p>
+
+    <script>
+        let text;
+        switch(new Date().getDate()){
+            case 4:
+            case 5:
+                text = "Soon it is weekend";
+                break;
+            case 0:
+            case 6:
+                text = "It is weekend";
+                break;
+            default:
+                text = "Looking forward to tha weekend";
+        }
+    </script>
+</body>
+</html>
