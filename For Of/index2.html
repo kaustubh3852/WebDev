@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrit</title>
+</head>
+<body>
+    <h2>JavaScrit For Of Loop</h2>
+    <p>The for of statement loops the values of an iterable object:</p>
+    <p id="demo"></p>
+
+    <script>
+        let language = "JavaScript";
+
+        let text = "";
+        for (let x of language){
+            text += x + "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
