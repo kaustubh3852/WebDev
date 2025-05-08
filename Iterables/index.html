@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Iterables</h1>
+    <h2>Iterate over a String</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Create a String
+        const name = "W3Schools";
+
+        // List all elements
+        let text = "";
+        for(const x of name) {
+            text += x + "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
