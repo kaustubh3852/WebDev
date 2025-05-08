@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Iterables</h1>
+    <h2>Iterate over an Array</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an array
+        const numbers = [2, 4, 6, 8];
+
+        // List all elements
+        let text = "";
+        for (const x of numbers){
+            text += x + "<br>";
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
