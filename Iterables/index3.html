@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Iterables</h1>
+    <h2>Iterates over a set</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create a set
+        const letters = new Set(["a", "b", "c"]);
+
+        // List all elements
+        let text = "";
+
+        for(const x of letters){
+            text += x + "<br>";
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
