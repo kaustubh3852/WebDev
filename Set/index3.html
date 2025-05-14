@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Sets </h1>
+    <h2>The add() Method</h2>
+    <p>The add() method adds the values to a set:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create a Set
+        const letters = new Set();
+
+        // Create a variable
+        const a = "a";
+        const b = "b";
+        const c = "c";
+
+        // Add Values as a Variable to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+        letters.add("d");
+        letters.add("e");
+
+        // Display the Size
+        document.getElementById('demo').innerHTML = "The set has " + letters.size + " values";
+    </script>
+</body>
+</html>
