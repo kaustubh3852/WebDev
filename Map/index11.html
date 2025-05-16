@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript maps</h1>
+    <h2>The values() Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        let text = "";
+        for (const x of fruits.values()){
+            text += x + "<br>";
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
