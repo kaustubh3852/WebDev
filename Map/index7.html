@@ -20,8 +20,10 @@
         // Delete an Element
         fruits.delete("apples");
         fruits.clear();
+        fruits.has("apples");
 
-        document.getElementById('demo').innerHTML = fruits.size;
+        document.getElementById('demo').innerHTML = fruits.size + "<br>" + fruits.has("apples");
+        
     </script>
 </body>
 </html>
