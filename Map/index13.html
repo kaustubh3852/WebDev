@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Maps</h1>
+    <p>Bieng able to use objects as keys is an important Map features</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create Objects
+        const apples = {name: "Apples"};
+        const bananas = {name: "Bananas"};
+        const oranges = {name: "Oranges"};
+
+        // Create a Map
+        const fruits = new Map();
+
+        // Add the Objects to the Map
+        fruits.set(apples, 500);
+        fruits.set(bananas, 300);
+        fruits.set(oranges, 200);
+
+        document.getElementById('demo').innerHTML = fruits.get(apples);
+    </script>
+</body>
+</html>
