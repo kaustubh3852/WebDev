@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Operators</h1>
+    <h2>The instanceof Operator</h2>
+    <p>The instaneof Oerator returns true if an object is an instance of a specified object type:</p>
+    
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        document.getElementById('demo').innerHTML = "Map:" + (fruits instanceof Map);
+    </script>
+</body>
+</html>
