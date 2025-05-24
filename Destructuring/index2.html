@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Objects</h1>
+    <h2>Object Destructuring</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50
+        };
+
+        // Destructuring
+        let {firstName, lastName, country = "US"} = person;
+
+        // Dislay Primitive values
+
+        document.getElementById('demo').innerHTML = firstName + " " + lastName + " " + country;
+    </script>
+</body>
+</html>
