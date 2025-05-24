@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Arrays</h1>
+    <h2>Array Destructring</h2>
+    <p>we can skip array values using two or more commas:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Array
+        const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+        
+        // Destructuring
+        let [fruit1,,,fruit2] = fruits;
+
+        // Display Primitive values
+        document.getElementById('demo').innerHTML = fruit1 + " " + fruit2;
+    </script>
+</body>
+</html>
