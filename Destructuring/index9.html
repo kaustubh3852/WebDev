@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Variables</h1>
+    <h2>swapping variables</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let firstName = "John";
+        let lastName = "Doe";
+
+        // Destructuring
+        [firstName, lastName]=
+        [lastName, firstName];
+
+        // Display the values
+        document.getElementById('demo').innerHTML = firstName +" " + lastName;
+    </script>
+</body>
+</html>
