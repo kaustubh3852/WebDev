@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Regular Expression</h1>
+    <p>Search for an "e" in the next paragraph:</p>
+    <p id="demo">The best things in life are free!</p>
+    <p id="demo2"></p>
+
+    <script>
+        let text = document.getElementById('demo').innerHTML;
+        const pattern = /e/;
+        document.getElementById('demo2').innerHTML = pattern.test(text);
+    </script>
+</body>
+</html>
