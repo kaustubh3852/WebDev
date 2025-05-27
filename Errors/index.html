@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Error Handeling</h2>
+    <p>How to use catch to display an error</p>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            addlert("welcome guest!");
+        }
+        catch(err) {
+            document.getElementById('demo').innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>
