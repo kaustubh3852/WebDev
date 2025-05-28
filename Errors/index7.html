@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Errors</h1>
+    <h2>The SyntaxError</h2>
+    <p>You cannot evaluate code that contains a syntax error:</p>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            eval ("alert('hello)");
+        }
+        catch(err) {
+            document.getElementById('demo').innerHTML = err.name;
+        }
+    </script>
+</body>
+</html>
