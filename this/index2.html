@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>The javaScript <i>this</i> keyword</h1>
+    <p>In in this example, <b>this</b> refers to the peerson object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create an object
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            Id: "5566",
+
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById('demo').innerHTML = person.fullName();
+    </script>
+</body>
+</html>
