@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+    <p id="demo"></p>
+
+    <script>
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        const Car1 = new Car("Ford", 2014);
+        const Car2 = new Car("Audi", 2019);
+
+        document.getElementById('demo').innerHTML = Car1.name + " " + Car2.name;
+    </script>
+</body>
+</html>
