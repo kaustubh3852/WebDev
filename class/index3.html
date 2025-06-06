@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Class Method</h1>
+    <p>Pass a parameter into the "age()" method.</p>
+    <p id="demo"></p>
+
+    <script>
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(x) {
+                return x - this.year;
+            }
+        }
+
+        const date = new Date();
+        let year = date.getFullYear();
+
+        const myCar = new Car("Ford", 2014);
+
+        document.getElementById('demo').innerHTML = "My car is " + myCar.age(year) + " years old.";
+    </script>
+</body>
+</html>
