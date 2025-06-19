@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Object Constructor</h1>
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye){
+            this.firstName = first;
+            this.laStName = last;
+            this.age = age;
+            this.eye = eye;
+        }
+        // Create two Perosn object
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+
+        // Display age
+
+        document.getElementById('demo').innerHTML = "My Father is " + myFather.age + " years old" + " and " + "my Mother is " + myMother.age + " years old";
+    </script>
+</body>
+</html>
