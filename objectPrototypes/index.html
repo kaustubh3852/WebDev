@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Objects</h2>
+    <p>The prototpe property allows you to add new methods to objects constructors:</p>
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye,){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        Person.prototype.nationality = "English";
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+
+        // Display nationality
+        document.getElementById('demo').innerHTML = "My Father's name is " + myFather.firstName+ " " + myFather.lastName+" " + " and he is " + myFather.age+ " years old and his nationality is " + myFather.nationality + ".";
+    </script>
+</body>
+</html>
