@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Objects</h1>
+    <h2>The Object.fromEntries() Method</h2>
+    <p>The numbers of pears are:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = [
+            ["Bananas", 300],
+            ["Pears", 900],
+            ["Apples", 500]
+        ];
+
+        const myObj = Object.fromEntries(fruits);
+        document.getElementById('demo').innerHTML = myObj.Pears;
+    </script>
+</body>
+</html>
