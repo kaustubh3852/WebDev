@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Object</h1>
+    <h2>The Object.assign() Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Creaate target object
+        const Person1 = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        // Create Source Object
+        const Person2 = {firstName: "Annie", lastName: "Smith"};
+
+        // Assign Source to Target
+        Object.assign(Person1, Person2);
+
+        // Display Target
+        let text = Object.entries(Person1);
+        document.getElementById('demo').innerHTML = text;
+        
+    </script>
+</body>
+</html>
