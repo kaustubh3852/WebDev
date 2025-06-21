@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Objects</h1>
+    <h2>The Object.keys() Method</h2>
+    <p>Object.keys() returns an emmurable array of the keys of an object:</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const Person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 40,
+            eyeColor: "blue"
+        };
+
+        // Get the keys
+        const keys = Object.keys(Person);
+        document.getElementById('demo').innerHTML = keys;
+    </script>
+    <p>Object.keys() is not supported in Internet Explorer.</p>
+</body>
+</html>
