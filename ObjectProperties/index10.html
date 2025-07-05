@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Object </h1>
+    <h2>The getOwnPropertyNames() Method</h2>
+    <p>This example list all the properties of an Method</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create an object
+        const Person = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "EN"
+        };
+
+        // Display all Proprties
+        document.getElementById('demo').innerHTML = Object.getOwnPropertyNames(Person);
+    </script>
+</body>
+</html>
