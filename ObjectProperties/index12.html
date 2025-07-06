@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>javaScript Object</h1>
+    <h2>The defineProperty() Method</h2>
+    <p>This example uses the defineProperty() method to add a getter and a setter.</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const Person = {firstName: "John", lastName: "Doe"};
+
+        // Define a getter
+        Object.defineProperty(Person, "fullName", {get: function() 
+            {return this.firstName + " " + this.lastName;}
+        });
+
+        // Display fullName
+
+        document.getElementById('demo').innerHTML = Person.fullName;
+    </script>
+</body>
+</html>
