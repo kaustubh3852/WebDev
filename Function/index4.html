@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Functions</h2>
+    <p>javaScript has an built-in functon constructor</p>
+    <p id="demo"></p>
+
+    <script>
+       const myFunction = new Function ("a", "b", "return a * b");
+       document.getElementById('demo').innerHTML = myFunction(4,3);
+    </script>
+</body>
+</html>
