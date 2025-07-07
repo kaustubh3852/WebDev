@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <h2>JavaScript Getters and Setters</h2>
+  <p>Perfect for creating counters:</p>
+  <p id="demo"></p>
+
+  <script>
+    // Define an object
+    const myCounter = { counter: 0 };
+
+    // Define getters and setters
+    Object.defineProperty(myCounter, "reset", {
+      get: function () { this.counter = 0; }
+    });
+    Object.defineProperty(myCounter, "increment", {
+      get: function () { this.counter++; }
+    });
+    Object.defineProperty(myCounter, "decrement", {
+      get: function () { this.counter--; }
+    });
+    Object.defineProperty(myCounter, "add", {
+      set: function (value) { this.counter += value; }
+    });
+    Object.defineProperty(myCounter, "subtract", {
+      set: function (value) { this.counter -= value; }
+    });
+
+    // Play with counter
+    myCounter.reset;
+    myCounter.add = 5;
+    myCounter.subtract = 1;
+    myCounter.increment;
+    myCounter.decrement;
+
+    document.getElementById('demo').innerHTML = myCounter.counter;
+  </script>
+</body>
+</html>
