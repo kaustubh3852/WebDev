@@ -6,15 +6,14 @@
     <title>javaScript</title>
 </head>
 <body>
-    <h2>javaScript HTML DOM </h2>
-    <p id="itro">Finding HTML Elements by Id</p>
-    <p>This example demonstrate the getElementById method</p>
+    <h2>javaScript HTML DOM</h2>
+    <p>Finding HTML Elements by Tag Name</p>
+    <p>This example demonstrates the <b>getElementByTagName method.</b></p>
     <p id="demo"></p>
 
     <script>
-        const element = document.getElementById('itro');
-        document.getElementById('demo').innerHTML = "The text from the intro paragraph is : " + element.innerHTML;
+        const element = document.getElementsByTagName("p");
+        document.getElementById('demo').innerHTML = "The text in first paragraph (index 0) is : " + element[0].innerHTML;
     </script>
-
 </body>
 </html>
